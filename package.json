@@ -1,0 +1,15 @@
+{
+  "name": "bs-ball",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Fourna <jeremyfourna@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bs-geometric-forms": "0.0.1",
+    "ramda": "^0.24.1"
+  }
+}
