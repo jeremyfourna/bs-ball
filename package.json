@@ -1,13 +1,20 @@
 {
   "name": "bs-ball",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Allow you to define the ball holder inside a game to place the ball on the svg",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremyfourna/bs-ball.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremyfourna/bs-ball/issues"
+  },
   "author": "Jeremy Fourna <jeremyfourna@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bs-geometric-forms": "0.0.1",
     "ramda": "^0.24.1"

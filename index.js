@@ -3,14 +3,14 @@ const { createCircle } = require('bs-geometric-forms');
 
 function addBallToGame(player, allPlayers) {
   const ballPosition = R.prop(player, R.pick([player], allPlayers));
+
   return R.assoc('className', 'ball', ballPosition);
 }
 
 function generateBallPosition(wishedZoom, ballPosition, context) {
-  createCircle(
+  return createCircle(
     R.prop('x', ballPosition),
     R.prop('y', ballPosition),
-    // Impure because access wishedZoom outside the function
     R.multiply(wishedZoom, 0.25),
     'black',
     'orange',
@@ -19,5 +19,5 @@ function generateBallPosition(wishedZoom, ballPosition, context) {
   );
 }
 
-exports.addBallToGame = addBallToGame;
-exports.generateBallPosition = generateBallPosition;
+exports.addBallToGame = R.curry(addBallToGame);
+exports.generateBallPosition = R.curry(generateBallPosition);
