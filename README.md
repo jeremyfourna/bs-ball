@@ -12,7 +12,7 @@
 const { addBallToGame, generateBallPosition } = require('bs-ball');
 
 // Add the class 'ball' to the ball holder
-addBallToGame(player, listOfPlayers);
+const playersWithBall = addBallToGame(player, listOfPlayers);
 
 // Display the ball inside the svg
 generateBallPosition(svgZoom, ballPosition, svgElement);
